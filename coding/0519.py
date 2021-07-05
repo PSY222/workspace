@@ -1,6 +1,14 @@
-x = 12.5
-if x.isalpha() == True:
-    print("math error")
-elif x.isdigit() == True:
-    if x - int(x) == 0: print("정수입니다")
-    elif  x - int(x) != 0: print("소수입니다")
+k = "c910m6ia 1ho"
+a, b = k.split(' ')
+print("str :",''.join([i for i in a if i.isalpha()]),''.join([i for i in b if i.isalpha()]))
+print("int :",''.join([i for i in k if i.isdigit()]))
+
+
+
+
+
+# for n in a:
+#     for i in n:
+#         if i.alpha():
+#
+#         else:
