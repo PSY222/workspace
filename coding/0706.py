@@ -26,17 +26,24 @@
 # extra = [30,70,15,40,65]
 # print([i for i in extra])
 
-a = 10 #원래 기계의 가격
-aa = 150 #원래 기계의 성:
-extraP = 3
-extra = [30,70,15,40,65]
-extra.sort(reverse=True)
-n = 0
-k = {}
-for i in extra:
-    n += 1
-    m = (aa+i)//(3*n+a)
-    k[i] = m
-    aa += i
+#---------------------------------------
+# 
+# input = list(map(int,'0 15 4 0 7 10 0'.split(' ')))
+# 
+# for i in range(len(input)):
+#     times = 0
+#     for j in input:
+#         if j >= i:
+#             times += 1
+#     if times == i:
+#         print('h-index:',i)
+#         break
+# 
+# input.sort(reverse = True)
+# for i in range(len(input)):
+#     if sum(input[0:i]) >= i**2:
+#      print('g-index:',i)
+#      break
 
-print(max(k.values()))
+#---------------------------------------
+
