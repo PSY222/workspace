@@ -18,25 +18,26 @@ def result(n):
 happynum(7)
 result(n)
 
-# #
-# def happynum(n):
-#     list = [n]
-#     while n != 1:
-#         if len(str(n)) == 1:
-#             n = n**2
-#             list.append(n)
-#             continue
-#         elif len(str(n)) == 2:
-#             a,b = divmod(n,10)
-#             n = a**2 + b**2
-#             list.append(n)
-#             continue
-#         else:
-#             times = len(str(n))
-#             for i  in range(1,len(str(n))+1):
-#                 n %= 10**(times-1)
-#             list.append(n)
-#             continue
-#     return print(list)
+#making CamelCase to Pothole_case!
+
+def location(n):
+    location  = []
+    for i in n:
+        if i.isupper() == True or i.isdigit() == True:
+            location.append(i)
+        else: pass
+    return location
 #
-# happynum(7)
+def separate(n):
+    n2 = [i for i in n.lower()]
+    id = []
+    t = 0
+    for i in location(n):
+        id.append(n.index(i))
+    for loc in id:
+        n2.insert(loc+t,'_')
+        t += 1
+    return print(''.join(n2))
+
+
+separate('numGoat30')
